@@ -5,4 +5,5 @@ RUN /app/setup/install_sfdx.sh
 
 RUN pip install --no-cache --upgrade pip
 RUN pip install pipx
-RUN pipx install cumulusci snowfakery
+RUN pipx install cumulusci
+RUN pipx install snowfakery
