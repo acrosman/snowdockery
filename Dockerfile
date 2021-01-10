@@ -14,7 +14,7 @@ RUN pip install --no-cache --upgrade pip
 RUN pip install Flask
 RUN pip install pipx
 
-## Add cumulusci and snowfakery
+## Add cumulusci and snowfakery.
 RUN pipx install cumulusci
 RUN pipx install snowfakery
 RUN pipx ensurepath
@@ -22,7 +22,7 @@ RUN pipx ensurepath
 ## Add the web server we'll be using.
 COPY ./src/server/* /var/opt/bin
 
-## Copy over the interface app
+## Copy over the interface app.
 COPY ./src/app/* /srv/http
 
 ## Start the server
